@@ -1,0 +1,41 @@
+.selection-room-container {
+    min-height: 100vh;
+    background: transparent;
+    position: relative;
+}
+
+.selection-room-main {
+    padding-bottom: 200px; /* Espaço para o footer */
+    min-height: calc(100vh - 200px);
+}
+
+@media (max-width: 768px) {
+    .selection-room-main {
+        padding-bottom: 180px;
+        min-height: calc(100vh - 180px);
+    }
+}
+
+.add-room-btn {
+    position: fixed;
+    bottom: 120px; /* Acima do footer. Ajuste esse valor se necessário. */
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #007bff; /* Cor principal */
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s, transform 0.2s;
+    z-index: 1010; /* Maior que o z-index do footer (1000) */
+}
+
+.add-room-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}

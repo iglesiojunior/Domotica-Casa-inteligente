@@ -1,0 +1,11 @@
+.LoginSideBar {
+    flex: 1; /* Faz com que o sidebar ocupe uma porção do card */
+    background-image: linear-gradient(to top, red, rgba(239, 20, 20, 0.892),orange); /* Cor de fundo vermelha */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
